@@ -26,7 +26,25 @@
 
     </header>
 
-    <!-- Section: Showcase -->
+    <!-- Section: Contact form -->
+    <section id="contact-a" class="text-center py-3 my-4">
+        <div class="container">
+            <h2 class="section title">Contact Bigg Belly BBQ</h2>
+            <div class="bottom-line"></div>
+            <p class="lead">Need something special? Contact us!</p>
+            <form action="contact.php" method="post">
+                <div class="text-fields">
+                    <input type="text" class="text-input name-input" placeholder="Name" name="name">
+                    <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                    <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+                    <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+                    <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                </div>
+                <button type="submit" class="btn-dark" name="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer bg-dark">
