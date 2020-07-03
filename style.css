@@ -170,9 +170,33 @@ ul {
       font-weight: 100;
       text-transform: uppercase; }
 
-.lead {
-      font-size: 1.3rem;
-      margin-bottom: 2rem; }
+/* About page grid and styling */
+#about-a .about-info {
+  display: grid;
+  grid-template-areas: "bioimage bio bio"    
+                       "aw1 aw2 aw3";
+  grid-gap: 1.2rem; }
+
+#about-a .bio-image {
+  grid-area: bioimage; }
+
+#about-a .bio {
+  grid-area: bio;
+  border-left: 3px solid #ffbc00;
+  padding: 0.8rem; }
+  #about-a .bio h4 {
+    font-size: 2rem; }
+
+#about-a .award-1 {
+  grid-area: aw1; }
+
+#about-a .award-2 {
+  grid-area: aw2; }
+
+#about-a .award-3 {
+  grid-area: aw3; }
+
+
 
 
 /* Footer */
