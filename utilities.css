@@ -8,6 +8,10 @@
     background: #e4e4c5
 }
 
+.bg-light {
+    background: #f4f4f4;
+    color: #000; }
+
 /* Add padding or margin to y or x axis automatically */
 .py-1 {
     padding: 1rem 0; }
@@ -82,3 +86,8 @@
   a[class^='btn-']:hover,
   input[class^='btn-']:hover {
     background-color: #ffbc00; }
+
+/* Paragraph effects */
+.lead {
+    font-size: 1.3rem;
+    margin-bottom: 2rem; }
