@@ -162,6 +162,18 @@ ul {
     margin: auto;
     overflow: hidden; }
 
+.section-title {
+      font-size: 2rem;
+      display: block;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      font-weight: 100;
+      text-transform: uppercase; }
+
+.lead {
+      font-size: 1.3rem;
+      margin-bottom: 2rem; }
+
 
 /* Footer */
 .footer{
@@ -183,5 +195,5 @@ ul {
 
 
 .footer .social > *  {
-  margin-right: 30px;
+  margin-right: 10px;
 }
