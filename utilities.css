@@ -53,10 +53,10 @@
 /* Line effects */
 .bottom-line {
     height: 2px;
-    width: 5rem;
+    width: 10rem;
     background: #ffbc00;
     display: block;
-    margin: 0 auto 1rem auto; }
+    margin: 1rem auto 1rem auto; }
 
 /* Buttons */
 .btn-main, .btn-light, .btn-dark {
