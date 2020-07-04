@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
 }
+
 /* Navbar */
 
 .navbar {
@@ -16,7 +17,7 @@
   height: 70px;
   position: fixed;
   top: 0px;
-  padding: 0 30px;
+  padding: 0 40px;
   opacity: 80%;
   transition: 1.5s;
 }
@@ -42,7 +43,6 @@ body {
   background: #212124;
   color: #FFFF00;
   font-family: 'Raleway', Verdana, Geneva, Tahoma, sans-serif;
-  
 }
 
 .logo {
@@ -66,12 +66,12 @@ ul {
 }
 
 /* Homepage hero section with background image*/
+
 .hero {
-  background: url('img/600pxlogo.png') no-repeat center center/cover;
-  height: 120vh;
+  background: url('img/1000pxlogo.png') no-repeat center center/cover;
+  height: 100vh;
   position: relative;
   color: #fff;
-  
 }
 
 .hero .content {
@@ -101,18 +101,34 @@ ul {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.6);
-  
+  background: rgba(42, 42, 42, 0.8);
 }
 
 .hero * {
   z-index: 10;
 }
 
+/* Menu Page */
+
+.mainMenuItem {
+  display: flex;
+  flex-direction: column;
+}
+
+ul .entree,
+ul .category {
+  padding: 10px 10px 0 0;
+  margin: 10px 10px 0 0;
+
+}
+li .itemName {
+  font-family: 'Rye';
+}
+
 /* Location page */
+
 .map-container {
   width: 500px;
-
 }
 
 .location-info {
@@ -127,9 +143,8 @@ ul {
   margin: 5rem 0 0 0;
 }
 
-.flex-items > div {
+.flex-items>div {
   padding: 20px;
-
 }
 
 /* Contact page */
@@ -138,69 +153,91 @@ ul {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';
   grid-gap: 1.2rem;
-  margin-bottom: 1.2rem; }
+  margin-bottom: 1.2rem;
+}
+
 #contact-a .text-fields .name-input {
-    grid-area: name; }
+  grid-area: name;
+}
+
 #contact-a .text-fields .subject-input {
-    grid-area: subject; }
+  grid-area: subject;
+}
+
 #contact-a .text-fields .email-input {
-    grid-area: email; }
+  grid-area: email;
+}
+
 #contact-a .text-fields .phone-input {
-    grid-area: phone; }
+  grid-area: phone;
+}
+
 #contact-a .text-fields .message-input {
-    grid-area: message;
-    height: 150px; }
+  grid-area: message;
+  height: 150px;
+}
+
 #contact-a .text-fields .text-input {
-    padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+}
 
 #contact-a button[type='submit'] {
-  width: 50%; }
+  width: 50%;
+}
 
 .container {
-    max-width: 1280px;
-    padding: 0 1.5rem;
-    margin: auto;
-    overflow: hidden; }
+  max-width: 1280px;
+  padding: 100px 1.5rem 100px;
+  margin: auto;
+  overflow: hidden;
+}
 
 .section-title {
-      font-size: 2rem;
-      display: block;
-      padding-bottom: 0.5rem;
-      text-align: center;
-      font-weight: 100;
-      text-transform: uppercase; }
+  font-size: 2rem;
+  display: block;
+  padding-bottom: 0.5rem;
+  text-align: center;
+  font-weight: 100;
+  text-transform: uppercase;
+}
 
 /* About page grid and styling */
+
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio"    
-                       "aw1 aw2 aw3";
-  grid-gap: 1.2rem; }
+  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
+  grid-gap: 1.2rem;
+}
 
 #about-a .bio-image {
-  grid-area: bioimage; }
+  grid-area: bioimage;
+}
 
 #about-a .bio {
   grid-area: bio;
   border-left: 3px solid #ffbc00;
-  padding: 0.8rem; }
-  #about-a .bio h4 {
-    font-size: 2rem; }
+  padding: 0.8rem;
+}
+
+#about-a .bio h4 {
+  font-size: 2rem;
+}
 
 #about-a .award-1 {
-  grid-area: aw1; }
+  grid-area: aw1;
+}
 
 #about-a .award-2 {
-  grid-area: aw2; }
+  grid-area: aw2;
+}
 
 #about-a .award-3 {
-  grid-area: aw3; }
-
-
-
+  grid-area: aw3;
+}
 
 /* Footer */
-.footer{
+
+.footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,14 +247,13 @@ ul {
 }
 
 .footer a {
-  color:  #ffff00;
+  color: #ffff00;
 }
 
-.footer a:hover{
-  color:  #ffb300;
+.footer a:hover {
+  color: #ffb300;
 }
 
-
-.footer .social > *  {
+.footer .social>* {
   margin-right: 10px;
 }
