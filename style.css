@@ -111,8 +111,9 @@ ul {
 /* Menu Page */
 
 .mainMenuItem {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+  flex-flow: column wrap;
 }
 
 ul .entree,
