@@ -110,22 +110,57 @@ ul {
 
 /* Menu Page */
 
-.mainMenuItem {
-  display: inline-flex;
-  flex-direction: column;
-  flex-flow: column wrap;
+.mainMenuItems {
+  display: grid;
+  flex-direction: row;
 }
 
-ul .entree,
-ul .category {
-  padding: 10px 10px 0 0;
-  margin: 10px 10px 0 0;
-
+.entree,
+.category {
+  padding: 20px;
+  margin: 20px;
+  max-width: 450px;
+  background-color: #333;
 }
-li .itemName {
+.itemName {
   font-family: 'Rye';
+  font-size: 30px;
+  line-height: 1.5;
 }
 
+.itemDescription {
+  font-size: 25px;
+  line-height: 1.5
+}
+
+.cost {
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.itemHeading {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: #ffb300 solid 1px;
+  margin-bottom: 1rem;
+}
+
+.categoryItems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.disclaimer {
+  font-style: italic;
+  padding: 10px 0px;
+}
 /* Location page */
 
 .map-container {
