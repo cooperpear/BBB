@@ -175,7 +175,7 @@ ul {
   display: flex;
   text-align: center;
   justify-content: space-evenly;
-  height: 500px;
+  height: 80vh;
   margin: 5rem 0 0 0;
 }
 
@@ -221,11 +221,12 @@ ul {
   width: 50%;
 }
 
-.container {
+.contact-container {
   max-width: 1280px;
   padding: 100px 1.5rem 100px;
   margin: auto;
   overflow: hidden;
+  height: 64vh;
 }
 
 .section-title {
@@ -238,6 +239,10 @@ ul {
 }
 
 /* About page grid and styling */
+
+.about-container {
+  height: 80vh;
+}
 
 #about-a .about-info {
   display: grid;
