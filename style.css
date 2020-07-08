@@ -110,6 +110,10 @@ ul {
 
 /* Menu Page */
 
+.menu-container {
+  margin: 5rem;
+}
+
 .mainMenuItems {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -163,7 +167,8 @@ ul {
 /* Location page */
 
 .map-container {
-  width: 500px;
+  width: 1200px;
+  
 }
 
 .location-info {
