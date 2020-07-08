@@ -230,7 +230,7 @@ ul {
   padding: 130px 1.5rem 100px;
   margin: auto;
   overflow: hidden;
-  height: 64vh;
+  height: 100vh;
 }
 
 .section-title {
@@ -245,14 +245,22 @@ ul {
 /* About page grid and styling */
 
 .about-container {
-  height: 80vh;
+  height: 120vh;
 }
 
 #about-a .about-info {
   display: grid;
-  grid-template-areas: "bioimage bio bio" "aw1 aw2 aw3";
-
+  grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem;
+}
+
+.award-container {
+  display: grid;
+  grid-template-areas: "aw1 aw2 aw3";
+  grid-gap: 1.2rem;
+  justify-self: center;
+  margin: 2rem;
+  padding: 0 0 2rem 0;
 }
 
 #about-a .bio-image {
@@ -271,14 +279,20 @@ ul {
 
 #about-a .award-1 {
   grid-area: aw1;
+  height: 300px;
+  width: 300px;
 }
 
 #about-a .award-2 {
   grid-area: aw2;
+  height: 300px;
+  width: 300px;
 }
 
 #about-a .award-3 {
   grid-area: aw3;
+  height: 300px;
+  width: 200px;
 }
 
 /* Footer */
