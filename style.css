@@ -245,13 +245,14 @@ ul {
 /* About page grid and styling */
 
 .about-container {
-  height: 120vh;
+  height: auto;
 }
 
 #about-a .about-info {
   display: grid;
   grid-template-areas: "bioimage bio bio";
   grid-gap: 1.2rem;
+  margin: 2rem;
 }
 
 .award-container {
@@ -265,6 +266,8 @@ ul {
 
 #about-a .bio-image {
   grid-area: bioimage;
+  height: 500px;
+  width: 400px;
 }
 
 #about-a .bio {
