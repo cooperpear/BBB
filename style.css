@@ -119,7 +119,7 @@ ul {
 .category {
   padding: 20px;
   margin: 20px;
-  max-width: 450px;
+  max-width: 550px;
   background-color: #333;
 }
 .itemName {
@@ -298,4 +298,34 @@ img {
   width:100%;
   /* height: 100%; */
   object-fit: contain;
+}
+
+
+/* mobile */
+
+@media(max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .column, .flex-grid .column {
+    flex: 100%;
+    max-width: 100%
+  }
+
+  .team img {
+    width: 70%;
+  }
+
 }
