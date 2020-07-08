@@ -222,7 +222,7 @@ ul {
 
 .container {
   max-width: 1280px;
-  padding: 100px 1.5rem 100px;
+  padding: 130px 1.5rem 100px;
   margin: auto;
   overflow: hidden;
 }
@@ -324,8 +324,8 @@ img {
     max-width: 100%
   }
 
-  .team img {
-    width: 70%;
+  .mainMenuItems {
+    /* display: grid; */
+    grid-template-columns: 1fr;
   }
-
 }
