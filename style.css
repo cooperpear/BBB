@@ -168,16 +168,20 @@ ul {
 
 .map-container {
   width: 1200px;
-  
+  }
+
+.googleimg {
+  height: 500px;
 }
 
 .location-info {
   color: black;
+  margin: 3rem 0;
 }
 
 .flex-items {
   display: flex;
-  text-align: center;
+  text-align: left;
   justify-content: space-evenly;
   height: 80vh;
   margin: 5rem 0 0 0;
@@ -259,7 +263,7 @@ ul {
   display: grid;
   grid-template-areas: "aw1 aw2 aw3";
   grid-gap: 1.2rem;
-  justify-self: center;
+  /* justify-self: center; */
   margin: 2rem;
   padding: 0 0 2rem 0;
 }
