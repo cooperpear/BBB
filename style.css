@@ -231,16 +231,16 @@ ul {
 
 .contact-container {
   max-width: 1280px;
-  padding: 130px 1.5rem 100px;
-  margin: auto;
+  padding: 10px 1.5rem;
+  margin: 5rem;
   overflow: hidden;
-  height: 100vh;
+  height: auto;
 }
 
 .section-title {
   font-size: 2rem;
   display: block;
-  padding-bottom: 0.5rem;
+  padding-bottom: 1.5rem;
   text-align: center;
   font-weight: 100;
   text-transform: uppercase;
