@@ -233,9 +233,9 @@ ul {
 .contact-container {
   max-width: 1280px;
   padding: 10px 1.5rem;
-  margin: 5rem;
+  margin: auto;
   overflow: hidden;
-  height: auto;
+  height: 65vh;
 }
 
 .section-title {
