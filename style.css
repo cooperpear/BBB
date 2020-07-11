@@ -335,6 +335,8 @@ img {
 
 /* mobile */
 
+/* At 768, need menu page to push down, location page, about us header (page award section needs to be  */
+
 @media(max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -360,4 +362,9 @@ img {
     /* display: grid; */
     grid-template-columns: 1fr;
   }
+}
+
+/* Iphone X */
+@media (max-width: 375px) {
+
 }
