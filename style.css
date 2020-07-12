@@ -363,14 +363,16 @@ img {
     grid-template-columns: 1fr;
   }
 
-  /* .menu-container {
-    margin: rem;
-  } */
+  .menu-container {
+    padding: 3rem 0 0 0; 
+  }
 }
 
 /* Iphone X */
 @media (max-width: 375px) {
-
+ .mainMenuItems {
+    /* margin: 0 0 50px 0; */
+ }
 }
 
 /* Pixel 2 */
@@ -380,5 +382,8 @@ img {
 
 /* S5 */
 @media (max-width: 360px) {
-
+  .mainMenuItems {
+    /* margin: 0 0 6rem 0; */
+  }
+  
 }
