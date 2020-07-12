@@ -362,9 +362,23 @@ img {
     /* display: grid; */
     grid-template-columns: 1fr;
   }
+
+  /* .menu-container {
+    margin: rem;
+  } */
 }
 
 /* Iphone X */
 @media (max-width: 375px) {
+
+}
+
+/* Pixel 2 */
+@media (max-width: 411px) {
+
+}
+
+/* S5 */
+@media (max-width: 360px) {
 
 }
