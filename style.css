@@ -337,7 +337,7 @@ img {
 
 /* At 768, need menu page to push down, location page, about us header (page award section needs to be  */
 
-@media(max-width: 768px) {
+@media(max-width: 800px) {
   .navbar {
     flex-direction: column;
     height: 120px;
@@ -368,10 +368,20 @@ img {
   }
 }
 
-/* Iphone X */
-@media (max-width: 375px) {
- .mainMenuItems {
-    /* margin: 0 0 50px 0; */
+
+@media (max-width: 500px) {
+  #contact-a .text-fields {
+    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
+  #contact-b div {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px #555 solid; }
+    #contact-b div:last-child {
+      border: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+  #contact-c h1 {
+    font-size: 2rem; }
  }
 }
 
