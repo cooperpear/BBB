@@ -79,6 +79,14 @@
   margin: 1rem auto 1rem auto;
 }
 
+.bottom-line-menu {
+  height: 2px;
+  width: 100rem;
+  background: #ffbc00;
+  display: block;
+  margin: 3rem auto;
+}
+
 /* Buttons */
 
 .btn-main, .btn-light, .btn-dark {
