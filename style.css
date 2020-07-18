@@ -331,7 +331,8 @@ ul {
 
 .award-container {
   display: grid;
-  grid-template-areas: "aw1 aw2 aw3";
+  grid-template-areas: "aw1 aw2 aw3"
+                       "aw4 aw5 aw6";
   grid-gap: 1.2rem;
   /* justify-self: center; */
   margin: 5rem;
@@ -368,6 +369,24 @@ ul {
 
 #about-a .award-3 {
   grid-area: aw3;
+  height: 300px;
+  width: 200px;
+}
+
+#about-a .award-4 {
+  grid-area: aw4;
+  height: 300px;
+  width: 200px;
+}
+
+#about-a .award-5 {
+  grid-area: aw5;
+  height: 300px;
+  width: 200px;
+}
+
+#about-a .award-6 {
+  grid-area: aw6;
   height: 300px;
   width: 200px;
 }
@@ -426,7 +445,10 @@ img {
   .flex-columns .column, .flex-grid .column {
     flex: 100%;
     max-width: 100%
+    
   }
+
+ 
 
   .mainMenuItems {
     /* display: grid; */
