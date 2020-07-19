@@ -35,10 +35,6 @@
   display: flex;
 }
 
-.navbar .logo {
-  font-weight: 400px
-}
-
 body {
   background: #212124;
   color: #FFFF00;
@@ -173,7 +169,7 @@ ul .entree, .category {
 
 /* Catering info */
 
-/* 
+
 .flex-columns .column  {
   flex: 100%;
   max-width: 100%
@@ -224,7 +220,7 @@ ul .entree, .category {
 .flex-columns p { 
   margin: 20px 0;
 }
-*/
+
 
 .btn {
   cursor: pointer;
@@ -333,10 +329,9 @@ border-radius: 5px;
 }
 
 #about-a .about-info {
-  display: grid;
-  grid-template-areas: "bioimage bio bio";
-  grid-gap: 1.2rem;
-  margin: 2rem;
+  display: inline-flex;
+  flex-direction: column;
+
 }
 
 .award-container {
@@ -347,13 +342,13 @@ border-radius: 5px;
 }
 
 #about-a .bio-image {
-  grid-area: bioimage;
-  /* height: 500px; */
-  min-width: 400px;
+  /* grid-area: bioimage; */
+  height: 100%;
+  min-width: 300px;
 }
 
 #about-a .bio {
-  grid-area: bio;
+  /* grid-area: bio; */
   border-left: 3px solid #ffbc00;
   padding: 0.8rem;
 }
