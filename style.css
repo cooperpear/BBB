@@ -14,12 +14,12 @@
   justify-content: space-between;
   background-color: #333;
   width: 100%;
-  height: 70px;
+  height: 120px;
   position: fixed;
   top: 0px;
   padding: 0 40px;
   opacity: 80%;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .navbar a {
@@ -112,7 +112,7 @@ ul {
 /* Menu Page */
 
 .menu-container {
-  margin: 5rem;
+  margin-top: 8rem;
 }
 
 .mainMenuItems {
@@ -120,11 +120,16 @@ ul {
   grid-template-columns: 1fr 1fr;
 }
 
-.entree, .category {
+ul .entree, .category {
   padding: 20px;
   margin: 20px;
-  max-width: 550px;
+  width: 80%;
+  max-width: 650px;
   background-color: #333;
+}
+
+.itemDescription {
+  width: 100%;
 }
 
 .itemName {
@@ -219,6 +224,7 @@ ul {
 .flex-columns p { 
   margin: 20px 0;
 }
+*/
 
 .btn {
   cursor: pointer;
@@ -235,18 +241,21 @@ border-radius: 5px;
   border: 1px solid #fff;
 }
 
-*/
-/* Location page */
-
 /* MAP STUFF */
 #map {
   height:100%;
   width: 100%;
+  margin: 1rem;
+}
+
+/* Location page */
+
+#location {
+  margin-top: 8rem;
 }
 
 .location-info {
-  color: black;
-  margin: 3rem 0;
+    margin: 3rem 0;
 }
 
 .flex-items {
@@ -320,6 +329,7 @@ border-radius: 5px;
 
 .about-container {
   height: auto;
+  margin-top: 6rem;
 }
 
 #about-a .about-info {
@@ -333,7 +343,6 @@ border-radius: 5px;
   display: grid;
   grid-template-areas: "aw1 aw2" "aw3 aw4" "aw5 aw6";
   grid-gap: 1.2rem;
-  /* justify-self: center; */
   margin: 5rem;
 }
 
@@ -416,67 +425,4 @@ img {
   width: 100%;
   /* height: 100%; */
   object-fit: contain;
-}
-
-
-
-/* mobile */
-
-/* At 768, need menu page to push down, location page, about us header (page award section needs to be  */
-
-@media(max-width: 913px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px;
-  }
-  .navbar a {
-    padding: 10px 10px;
-    margin: 0 3px;
-  }
-  .flex-items {
-    flex-direction: column;
-  }
-  .flex-columns .column, .flex-grid .column {
-    flex: 100%;
-    max-width: 100%
-  }
-  .mainMenuItems {
-    /* display: grid; */
-    grid-template-columns: 1fr;
-  }
-  .menu-container {
-    padding: 3rem 0 0 0;
-    max-width: 1500px;
-    margin: auto;
-    border-color: red;
-  }
-  /* .map-container {
-    width: auto;
-    } */
-  .location-items {
-    margin: 2rem;
-  }
-  #location {
-    margin: 2rem;
-  }
-}
-
-@media (max-width: 500px) {
-  #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
-  }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 solid;
-  }
-  #contact-b div:last-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  #contact-c h1 {
-    font-size: 2rem;
-  }
 }
