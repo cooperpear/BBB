@@ -14,12 +14,12 @@
   justify-content: space-between;
   background-color: #333;
   width: 100%;
-  height: 70px;
+  height: 120px;
   position: fixed;
   top: 0px;
   padding: 0 40px;
   opacity: 80%;
-  transition: 1.5s;
+  transition: 1s;
 }
 
 .navbar a {
@@ -33,10 +33,6 @@
 
 .navbar ul {
   display: flex;
-}
-
-.navbar .logo {
-  font-weight: 400px
 }
 
 body {
@@ -112,21 +108,36 @@ ul {
 /* Menu Page */
 
 .menu-container {
-  margin: 5rem;
+  margin-top: 8rem;
 }
 
 .mainMenuItems {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-width: 100%;
 }
 
-.entree,
-.category {
-  padding: 20px;
-  margin: 20px;
-  max-width: 550px;
-  background-color: #333;
+.mainCateringItems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  min-width: 100%;
 }
+
+ul .entree, .category {
+  padding: 20px;
+  margin: 20px 10px;
+  width: 90%;
+  /* max-width: 650px; */
+  background-color: #333;
+  justify-self: center;
+}
+
+.itemDescription {
+  width: 100%;
+}
+
 .itemName {
   font-family: 'Rye';
   font-size: 30px;
@@ -168,6 +179,7 @@ ul {
 
 /* Catering info */
 
+/* 
 .flex-columns .column  {
   flex: 100%;
   max-width: 100%
@@ -217,14 +229,14 @@ ul {
 
 .flex-columns p { 
   margin: 20px 0;
-}
+} */
 
+/* BUTTON STYLE */
 .btn {
   cursor: pointer;
   display: inline-block;
   padding: 10px 30px;
   color: #fff;
-  /* background-color: #28a745; */
   border: none;
   border-radius: 5px;
 }
@@ -234,18 +246,19 @@ ul {
   border: 1px solid #fff;
 }
 
+/* MAP STUFF */
+#map {
+  height: 100%;
+  width: 100%;
+  margin: 1rem;
+}
+
 /* Location page */
-
-.map-container {
-  width: 1200px;
-  }
-
-.googleimg {
-  height: 500px;
+#location {
+  margin-top: 8rem;
 }
 
 .location-info {
-  color: black;
   margin: 3rem 0;
 }
 
@@ -320,33 +333,29 @@ ul {
 
 .about-container {
   height: auto;
+  margin-top: 6rem;
 }
 
 #about-a .about-info {
-  display: grid;
-  grid-template-areas: "bioimage bio bio";
-  grid-gap: 1.2rem;
-  margin: 2rem;
+  display: inline-flex;
+  flex-direction: column;
 }
 
 .award-container {
   display: grid;
-  grid-template-areas: "aw1 aw2 aw3"
-                       "aw4 aw5 aw6";
+  grid-template-areas: "aw1 aw2" "aw3 aw4" "aw5 aw6";
   grid-gap: 1.2rem;
-  /* justify-self: center; */
   margin: 5rem;
-  
 }
 
 #about-a .bio-image {
-  grid-area: bioimage;
-  height: 500px;
-  width: 400px;
+  /* grid-area: bioimage; */
+  height: 100%;
+  min-width: 300px;
 }
 
 #about-a .bio {
-  grid-area: bio;
+  /* grid-area: bio; */
   border-left: 3px solid #ffbc00;
   padding: 0.8rem;
 }
@@ -415,117 +424,7 @@ ul {
 }
 
 img {
-  width:100%;
+  width: 100%;
   /* height: 100%; */
   object-fit: contain;
-}
-
-
-/* mobile */
-
-/* At 768, need menu page to push down, location page, about us header (page award section needs to be  */
-
-@media(max-width: 800px) {
-  .navbar {
-    flex-direction: column;
-    height: 120px;
-    padding: 20px;
-  }
-
-  .navbar a {
-    padding: 10px 10px;
-    margin: 0 3px;
-  }
-
-  .flex-items {
-    
-    flex-direction: column;
-  }
-
-  .flex-columns .column, .flex-grid .column {
-    flex: 100%;
-    max-width: 100%
-    
-  }
-
- 
-
-  .mainMenuItems {
-    /* display: grid; */
-    grid-template-columns: 1fr;
-  }
-
-  .menu-container {
-    padding: 3rem 0 0 0; 
-  }
-
-  .map-container {
-    width: auto;
-    }
-
-  .location-items {
-    margin: 2rem;
-  }
-
-  #location {
-    margin: 2rem;
-  }
-
-  
-}
-
-
-@media (max-width: 500px) {
-  #contact-a .text-fields {
-    grid-template-areas: 'name' 'subject' 'email' 'phone' 'message'; }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 solid; }
-    #contact-b div:last-child {
-      border: none;
-      margin-bottom: 0;
-      padding-bottom: 0; }
-  #contact-c h1 {
-    font-size: 2rem; }
- }
-}
-
-/* Pixel 2 */
-@media (max-width: 411px) {
- .location-items {
-   height: auto;
- }
-
- .location-info {
-   height: 50px;
- }
- 
- .map-container: {
-   height: 300px;
- }
-
- /* Contact */
-
- .btn-dark {
-   width: auto;
-   display: inline;
- }
-}
-
-/* S5 */
-@media (max-width: 360px) {
-  .mainMenuItems {
-   
-  }
-  .location-items {
-    height: auto;
-  }
-  
-  .map-container: {
-    height: 300px;
-  }
-  
-
-  
 }
