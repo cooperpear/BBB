@@ -44,18 +44,10 @@
 @media (max-width: 500px) {
   #contact-a .text-fields {
     grid-template-areas: 'name' 'subject' 'email' 'phone' 'message';
+    /* display: grid; */
+    grid-template-columns: 1fr;
+    /* justify-items: center; */
+    /* min-width: 100%; */
   }
-  #contact-b div {
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    border-bottom: 1px #555 solid;
-  }
-  #contact-b div:last-child {
-    border: none;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-  #contact-c h1 {
-    font-size: 2rem;
-  }
+  
 }
