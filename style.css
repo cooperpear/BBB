@@ -357,7 +357,8 @@ ul .entree, .category {
 #about-a .bio {
   /* grid-area: bio; */
   border-left: 3px solid #ffbc00;
-  padding: 0.8rem;
+  padding: 2rem;
+  margin: 2rem 0;
 }
 
 #about-a .bio h4 {
