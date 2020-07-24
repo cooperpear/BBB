@@ -1,5 +1,3 @@
-var secretkey = config.SECRET_KEY;
-
 (function (exports) {
   "use strict";
 
